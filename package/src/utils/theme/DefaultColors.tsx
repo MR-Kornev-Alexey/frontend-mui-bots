@@ -142,4 +142,149 @@ const baselightTheme = createTheme({
   },
 });
 
+
+
+const basedarkTheme = createTheme({
+  direction: "ltr",
+  palette: {
+    mode: "dark", // 🔑 Переключаем на темный режим
+    primary: {
+      main: "#5D87FF",
+      light: "#8da4ff",
+      dark: "#4570EA",
+    },
+    secondary: {
+      main: "#49BEFF",
+      light: "#7ed2ff",
+      dark: "#23afdb",
+    },
+    success: {
+      main: "#13DEB9",
+      light: "#1de9b6",
+      dark: "#02b3a9",
+      contrastText: "#ffffff",
+    },
+    info: {
+      main: "#539BFF",
+      light: "#66b2ff",
+      dark: "#1682d4",
+      contrastText: "#ffffff",
+    },
+    error: {
+      main: "#FA896B",
+      light: "#ffab91",
+      dark: "#f3704d",
+      contrastText: "#ffffff",
+    },
+    warning: {
+      main: "#FFAE1F",
+      light: "#ffd149",
+      dark: "#ae8e59",
+      contrastText: "#ffffff",
+    },
+    grey: {
+      100: "#2a2a2a",
+      200: "#3a3a3a",
+      300: "#4a4a4a",
+      400: "#6a6a6a",
+      500: "#8a8a8a",
+      600: "#b8b8b8",
+    },
+    background: {
+      default: "#121212", // Темный фон
+      paper: "#1E1E1E",   // Фон для элементов
+    },
+    text: {
+      primary: "#ffffff",
+      secondary: "#b0b3b8",
+      disabled: "rgba(255, 255, 255, 0.5)",
+    },
+    action: {
+      active: "#5D87FF",
+      hover: "rgba(255, 255, 255, 0.08)",
+      selected: "rgba(255, 255, 255, 0.16)",
+      disabled: "rgba(255, 255, 255, 0.3)",
+      disabledBackground: "rgba(255, 255, 255, 0.12)",
+    },
+    divider: "rgba(255, 255, 255, 0.12)",
+  },
+  typography: {
+    fontFamily: plus.style.fontFamily,
+    h1: {
+      fontWeight: 600,
+      fontSize: "2.25rem",
+      lineHeight: "2.75rem",
+    },
+    h2: {
+      fontWeight: 600,
+      fontSize: "1.875rem",
+      lineHeight: "2.25rem",
+    },
+    h3: {
+      fontWeight: 600,
+      fontSize: "1.5rem",
+      lineHeight: "1.75rem",
+    },
+    h4: {
+      fontWeight: 600,
+      fontSize: "1.3125rem",
+      lineHeight: "1.6rem",
+    },
+    h5: {
+      fontWeight: 600,
+      fontSize: "1.125rem",
+      lineHeight: "1.6rem",
+    },
+    h6: {
+      fontWeight: 600,
+      fontSize: "1rem",
+      lineHeight: "1.2rem",
+    },
+    button: {
+      textTransform: "capitalize",
+      fontWeight: 400,
+    },
+    body1: {
+      fontSize: "0.875rem",
+      fontWeight: 400,
+      lineHeight: "1.334rem",
+    },
+    body2: {
+      fontSize: "0.75rem",
+      letterSpacing: "0rem",
+      fontWeight: 400,
+      lineHeight: "1rem",
+    },
+    subtitle1: {
+      fontSize: "0.875rem",
+      fontWeight: 400,
+    },
+    subtitle2: {
+      fontSize: "0.875rem",
+      fontWeight: 400,
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        ".MuiPaper-elevation9, .MuiPopover-root .MuiPaper-elevation": {
+          boxShadow:
+              "rgb(0 0 0 / 50%) 0px 0px 2px 0px, rgb(0 0 0 / 30%) 0px 12px 24px -4px !important",
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          borderRadius: "7px",
+          backgroundColor: "#1E1E1E", // Темный фон для карточек
+        },
+      },
+    },
+  },
+});
+
+export { basedarkTheme };
+
+
 export { baselightTheme };
